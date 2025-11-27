@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentário de Filme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Comentário sobre o Filme</h2>
+
+    <label for="youtubeLink">Cole o link do YouTube:</label>
+    <input type="text" id="youtubeLink" placeholder="https://www.youtube.com/watch?v=...">
+
+    <button class="btn" onclick="carregarVideo()">Carregar Vídeo</button>
+
+    <div class="video-area">
+      <iframe id="videoFrame" src="" allowfullscreen></iframe>
+    </div>
+
+    <label for="comentario">Escreva seu comentário:</label>
+    <textarea id="comentario" placeholder="Digite aqui..."></textarea>
+
+    <button class="btn" onclick="salvar()">Salvar Comentário</button>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
